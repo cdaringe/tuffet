@@ -1,10 +1,10 @@
 # tuffet
-CLI interface to a remote CouchDB!  The [full couchdb API](http://docs.couchdb.org/en/latest/http-api.html) is supported.
+The only adorable CouchDB CLI!  The [full couchdb API](http://docs.couchdb.org/en/latest/http-api.html) is supported along with some helpful, sugar extensions.
 
-![tuffet](tuffet.png)
+<img src="https://raw.githubusercontent.com/cdaringe/tuffet/master/tuffet.png" width="175">
 
 # why tuffet?
-You can only `curl` so much to get things done.  `curl`ing doesn't generally offer good type-ability.  The CouchDB API, though powerful, doesn't on its own get a ton of work done for you.  Generally, you need to execute a set of composite commands to do some useful things!  `tuffet` is designed to be a typing-friendly CouchDB proxy-API with a set of extensions that you may find helpful.  You can see some examples below to sell yourself :).
+You can only `curl` CouchDB so much to get things done.  `curl`ing doesn't generally offer good type-ability.  The CouchDB API, though powerful, doesn't on its own get a ton of work done for you.  Generally, you need to execute a set of composite commands to do some useful things!  `tuffet` is designed to be a typing-friendly CouchDB proxy-API with a set of extensions that you may find helpful.  You can see some examples below to sell yourself :).
 
 # why can't I import this as a module?
 Because [Pouchy][https://www.npmjs.com/package/pouchy] and plain ol' [PouchDB](https://www.npmjs.com/package/pouchdb) already exist.  They're great!  This CLI doesn't use them under the hood in order to stay true to stay simple and true to the simple CouchDB HTTP experience.
