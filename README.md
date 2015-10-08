@@ -1,5 +1,5 @@
 # tuffet
-The only adorable CouchDB CLI!  The [full couchdb API](http://docs.couchdb.org/en/latest/http-api.html) is supported along with some helpful, sugar extensions.
+The only adorable CouchDB CLI!  The [full couchdb API](http://docs.couchdb.org/en/latest/http-api.html) is supported along with some helpful extensions.
 
 <img src="https://raw.githubusercontent.com/cdaringe/tuffet/master/tuffet.png" width="175">
 
