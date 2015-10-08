@@ -34,7 +34,7 @@ $ tuffet get /
 $ tuffet put my-new-db
 { ok: true }
 
-$ tuffet get get my-new-db
+$ tuffet get my-new-db
 { db_name: 'my-new-db',
   doc_count: 0,
   doc_del_count: 0,
