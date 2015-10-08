@@ -1,6 +1,6 @@
 {
   "name": "tuffet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The only adorable CouchDB CLI tool coated with sugar",
   "main": "index.js",
   "scripts": {
