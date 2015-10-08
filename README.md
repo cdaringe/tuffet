@@ -7,9 +7,13 @@ The only adorable CouchDB CLI!  The [full couchdb API](http://docs.couchdb.org/e
 You can only `curl` CouchDB so much to get things done.  `curl`ing doesn't generally offer good type-ability.  The CouchDB API, though powerful, doesn't on its own get a ton of work done for you.  Generally, you need to execute a set of composite commands to do some useful things!  `tuffet` is designed to be a typing-friendly CouchDB proxy-API with a set of extensions that you may find helpful.  You can see some examples below to sell yourself :).
 
 # why can't I import this as a module?
-Because [Pouchy][https://www.npmjs.com/package/pouchy] and plain ol' [PouchDB](https://www.npmjs.com/package/pouchdb) already exist.  They're great!  This CLI doesn't use them under the hood in order to stay true to stay simple and true to the simple CouchDB HTTP experience.
+Because [Pouchy](https://www.npmjs.com/package/pouchy) and plain ol' [PouchDB](https://www.npmjs.com/package/pouchdb) already exist.  They're great!  This CLI doesn't use them under the hood in order to stay true to stay simple and true to the simple CouchDB HTTP experience.
 
 # usage
+
+## install
+`npm install -g tuffet`
+
 ## config
 Running `tuffet` will put a config in `~/.tuffetrc` with some defaults.  The content should be of type `JSON`.
 
@@ -19,7 +23,14 @@ Running `tuffet` will put a config in `~/.tuffetrc` with some defaults.  The con
 ## api
 Again, the [full couchdb API](http://docs.couchdb.org/en/latest/http-api.html) is loaded in.  BONUS actions can be found below.  For now, let's observe some basic commands.
 
-```
+```bash
+$ tuffet get /
+{ couchdb: 'Welcome',
+  uuid: '0df364afbe336fcee34f25422da9798f',
+  version: '1.6.1',
+  vendor: { version: '1.6.1_3', name: 'Homebrew' } }
+
+
 $ tuffet put my-new-db
 { ok: true }
 
