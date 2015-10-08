@@ -11,10 +11,11 @@ module.exports = function(opts) {
     var errorLevel = opts.verbose ? 'verbose' : 'error';
     logger = new (winston.Logger)({
         transports: [
-            new (winston.transports.Console)({
-                level: errorLevel,
+            new (winston.transports.Console)
+            ({
+                // level: errorLevel, // setting this causes logs to be omitted
                 colorize: true
-            }),
+            })
         ]
     });
     return logger;

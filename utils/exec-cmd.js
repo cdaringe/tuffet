@@ -6,11 +6,18 @@ var couchCmd = function(opts, config) {
     var cliArgs = opts._;
     var method = cliArgs[0];
     var route  = cliArgs[1];
+    var json = cliArgs[2];
+    try {
+        json = JSON.parse(json);
+    } catch(err) {
+        // uh err umm uhh
+    }
     if (method && route) {
         return axios({
             method: method.toLowerCase(),
             url: url.resolve(config.url, route),
-            timeout: config.timeout || 30
+            timeout: config.timeout || 30,
+            data: json
         })
         .then(function(res) {
             if (res && res.data) {
@@ -24,11 +31,10 @@ var couchCmd = function(opts, config) {
                 logger.verbose('verbose', err);
                 return;
             }
-            logger.warn(err.statusText);
-            debugger;
+            logger.error((err.status ? (err.status + ': ') : '') + err.statusText);
         });
     }
-    return Promise.resolve('missing method or route');
+    return Promise.resolve('missing method or route. syntax is `{crud} {endpoint}`, eg ``get db/_some_action`');
 };
 
 module.exports = function(opts, config) {

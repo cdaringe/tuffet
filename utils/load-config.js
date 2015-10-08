@@ -5,7 +5,7 @@ module.exports = function() {
     var path = require('path');
     var url = require('url');
     var failCount = 0;
-    var couchyrcPath = path.join(os.homedir(), '.tuffet');
+    var couchyrcPath = path.join(os.homedir(), '.tuffetrc');
 
     var readConfig = function() {
         return fs.readFileAsync(couchyrcPath);

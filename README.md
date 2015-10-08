@@ -20,8 +20,27 @@ Running `tuffet` will put a config in `~/.tuffetrc` with some defaults.  The con
 Again, the [full couchdb API](http://docs.couchdb.org/en/latest/http-api.html) is loaded in.  BONUS actions can be found below.  For now, let's observe some basic commands.
 
 ```
-tuffet get mydb //=> { "myDb": { ... }}
-tuffet get mydb/my-doc { ... }
+$ tuffet put my-new-db
+{ ok: true }
+
+$ tuffet get get my-new-db
+{ db_name: 'my-new-db',
+  doc_count: 0,
+  doc_del_count: 0,
+  update_seq: 0,
+  purge_seq: 0,
+  compact_running: false,
+  disk_size: 79,
+  data_size: 0,
+  instance_start_time: '1444289527569114',
+  disk_format_version: 6,
+  committed_update_seq: 0 }
+
+$ tuffet post my-new-db '{"new": "doc!"}'
+{ ok: true,
+  id: '2fd98bdae478273f418a1d6c4f000f97',
+  rev: '1-ac0f4654ecb99532dd8967dda8190ccb' }
+
 ```
 
 ## flags

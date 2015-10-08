@@ -1,7 +1,7 @@
 {
   "name": "tuffet",
   "version": "0.0.0",
-  "description": "The only adorable CouchDB CLI with sweet sassy sugar",
+  "description": "The only adorable CouchDB CLI tool coated with sugar",
   "main": "index.js",
   "scripts": {
     "preversion": "git checkout master && git pull && npm ls",
