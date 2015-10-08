@@ -57,8 +57,6 @@ $ tuffet post my-new-db '{"new": "doc!"}'
 ## flags
 - `-v/--verbose` - increase the log level (console only ATM)
 
-@TODO
-- `-f/--force` - exec HTTP request with params even if command not member of formal API
 
 ## sugar api
 
@@ -71,10 +69,12 @@ cdieringer@Snapper-osx:~/node/tuffet$ tuffet --dd
 ```
 
 # TODO
-- detect how many args couch endpoint wants
-    - if 1 and alias, match!
-    - if n and matching signature (url/like/this === url like this, args wise)
-        - if no matching sig, test components for aliases
+- match endpoint to formal couchdb endpoint
+    - if no matching sig, test components for aliases
+    - if no aliases, error
+        - unless `-f/--force` supplied - exec HTTP request with params even if command not member of formal API
+- write tests
+- test `ANY` and binary endpoint(s)
 
 # changelog
 - 1.0.0 - Migrate from `deebee`.  terribly boring name :)  You can have it if you want it. Just ask!
