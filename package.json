@@ -1,6 +1,6 @@
 {
   "name": "tuffet",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "The only adorable CouchDB CLI tool coated with sugar",
   "main": "index.js",
   "scripts": {
@@ -23,9 +23,8 @@
     "winston": "^1.0.2"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/cdaringe/tuffet.git"
+    "type": "git",
+    "url": "https://github.com/cdaringe/tuffet.git"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
