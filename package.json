@@ -20,6 +20,8 @@
     "install": "^0.1.8",
     "lodash.defaults": "^3.1.2",
     "nomnom": "^1.8.1",
+    "os-homedir": "^1.0.1",
+    "pouchy": "^2.0.1",
     "winston": "^1.0.2"
   },
   "repository": {

@@ -4,8 +4,9 @@ module.exports = function() {
     var os = require('os');
     var path = require('path');
     var url = require('url');
+    var homedir = require('os-homedir');
     var failCount = 0;
-    var couchyrcPath = path.join(os.homedir(), '.tuffetrc');
+    var couchyrcPath = path.join(homedir(), '.tuffetrc');
 
     var readConfig = function() {
         return fs.readFileAsync(couchyrcPath);
