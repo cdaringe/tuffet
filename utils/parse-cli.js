@@ -1,6 +1,11 @@
 'use strict';
 module.exports = function() {
     var opts = require("nomnom")
+    .option('clear', {
+        abbr: 'clr',
+        flag: true,
+        help: 'clear a database. $ tuffet <db> --clear'
+    })
     .option('deleteDatabases', {
         abbr: 'dd',
         flag: true,

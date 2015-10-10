@@ -3,7 +3,6 @@
  */
 var ready = require('./utils/boot.js')();
 var execCmd = require('./utils/exec-cmd.js');
-var axios = require('axios');
 
 var log = function(arg) {
     if (!arg) { return; }

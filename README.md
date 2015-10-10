@@ -7,7 +7,7 @@ The only adorable CouchDB CLI!  The [full couchdb API](http://docs.couchdb.org/e
 You can only `curl` CouchDB so much to get things done.  `curl`ing doesn't generally offer good type-ability.  The CouchDB API, though powerful, doesn't on its own get a ton of work done for you.  Generally, you need to execute a set of composite commands to do some useful things!  `tuffet` is designed to be a typing-friendly CouchDB proxy-API with a set of extensions that you may find helpful.  You can see some examples below to sell yourself :).
 
 # why can't I import this as a module?
-Because [Pouchy](https://www.npmjs.com/package/pouchy) and plain ol' [PouchDB](https://www.npmjs.com/package/pouchdb) already exist.  They're great!  This CLI doesn't use them under the hood in order to stay true to stay simple and true to the simple CouchDB HTTP experience.
+Because [Pouchy](https://www.npmjs.com/package/pouchy) and plain ol' [PouchDB](https://www.npmjs.com/package/pouchdb) already exist.  They're great!
 
 # usage
 
@@ -60,7 +60,16 @@ $ tuffet post my-new-db '{"new": "doc!"}'
 
 ## sugar api
 
-### deleteDatabases
+### clear database
+`--clear`
+Note, the history of these docs still exists.  This _isn't_ the same as deleting the db and recreating it.  E.g. tombstones left behind!  Also, this clears design docs.  PR me to preserve them :)  Dependent Pouchy package requires an update to support it.
+
+```bash
+cdieringer@Snapper-osx:~/node/tuffet$ tuffet mydb --clear
+1 'docs deleted'
+```
+
+### delete all databases
 `--dd`
 
 ```bash
