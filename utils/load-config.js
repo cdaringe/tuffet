@@ -23,7 +23,10 @@ module.exports = function() {
         }
         ++failCount;
 
-        if (err && err.message && !!err.message.match('no such')) {
+        if (err && err.message && (
+            err.code === 'ENOENT' ||
+            err.message.match('no such')
+        )) {
             // couldnt find config
             // upsert config to file with defaults
             config = {
