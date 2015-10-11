@@ -4,6 +4,7 @@
   "description": "The only adorable CouchDB CLI tool",
   "main": "index.js",
   "scripts": {
+    "test": "node test/index.js",
     "preversion": "git checkout master && git pull && npm ls",
     "publish-patch": "npm run preversion && npm version patch && git push origin master --tags && npm publish",
     "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
