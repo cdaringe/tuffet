@@ -86,4 +86,5 @@ cdieringer@Snapper-osx:~/node/tuffet$ tuffet --dd
 - test `ANY` and binary endpoint(s)
 
 # changelog
+- 1.1.0 - add `clear`
 - 1.0.0 - Migrate from `deebee`.  terribly boring name :)  You can have it if you want it. Just ask!
