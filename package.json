@@ -18,12 +18,12 @@
   },
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.17.1",
     "bluebird": "^3.5.0",
-    "lodash.defaults": "^3.1.2",
+    "lodash.defaults": "^4.2.0",
     "nomnom": "^1.8.1",
     "os-homedir": "^1.0.1",
-    "pouchy": "^11.0.3",
+    "pouchy": "^12.3.0",
     "winston": "^2.3.1",
     "snyk": "^1.41.1"
   },
@@ -32,7 +32,7 @@
     "url": "https://github.com/cdaringe/tuffet.git"
   },
   "devDependencies": {
-    "lodash.assign": "^3.2.0",
+    "lodash.assign": "^4.2.0",
     "tape": "^4.2.1"
   },
   "snyk": true
