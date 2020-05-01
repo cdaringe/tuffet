@@ -10,7 +10,7 @@
     "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
     "publish-major": "npm run preversion && npm version major && git push origin master --tags && npm publish",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "author": "cdaringe",
   "bin": {
@@ -25,7 +25,7 @@
     "os-homedir": "^1.0.1",
     "pouchy": "^11.0.3",
     "winston": "^2.3.1",
-    "snyk": "^1.41.1"
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
