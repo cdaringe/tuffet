@@ -1,8 +1,11 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
     - pouchy > pouchdb-core > pouchdb-debug > debug:
         patched: '2017-09-29T06:08:06.590Z'
+  SNYK-JS-LODASH-567746:
+    - pouchy > lodash:
+        patched: '2020-05-01T06:29:04.643Z'
