@@ -18,12 +18,12 @@
   },
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.21.1",
     "bluebird": "^3.5.0",
     "lodash.defaults": "^3.1.2",
     "nomnom": "^1.8.1",
     "os-homedir": "^1.0.1",
-    "pouchy": "^11.0.3",
+    "pouchy": "^12.3.1",
     "winston": "^2.3.1",
     "snyk": "^1.41.1"
   },
